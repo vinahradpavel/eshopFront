@@ -1,7 +1,15 @@
-.myClass {
-    position: relative;
-    background:gray;
-    color: black;
-    font-size: 40pt;
-    
+.Header {
+    background-color: #e3e3e3;
+    padding: 20px;
+    margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding-top: 20px;
+    }
+
+ul li {
+    display: inline;
+    padding: 10px;
 }
