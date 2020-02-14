@@ -1,17 +1,17 @@
- 
 import React from 'react';
 import styles from './style.module.css';
-import Navigation from '../Navigation';
-import Menu from '../Menu';
+import { Navigation } from '../Navigation';
+import { Container } from '../Container';
+import { Logo } from '../Logo';
+import { navItems } from '../../constants';
 
-
-
-const Header = (props) => (
-<div className={styles.Header}>
-    <Navigation>  
-        <Menu/>
-    </Navigation>
-</div>
+const Header = () => (
+    <header className={styles.Header}>
+        <Container>
+            <Logo brandName="PashaShop" />
+            <Navigation navItems={navItems} />
+        </Container>
+    </header>
 )
 
 export default Header;

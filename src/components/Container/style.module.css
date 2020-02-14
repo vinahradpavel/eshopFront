@@ -1,0 +1,10 @@
+.Container {
+    background-color: black; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
