@@ -1,8 +1,7 @@
 .Footer {
     background-color: black;
-    padding: 20px;
     margin: 0;
-    height: 50px;
+    height: 40px;
     display: flex;
     align-items: center;
     justify-content: right;    
