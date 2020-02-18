@@ -1,0 +1,10 @@
+.ProductCard h4 {
+    width: initial;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ProductCard p {
+    font-style: italic;
+    text-align: center;
+}

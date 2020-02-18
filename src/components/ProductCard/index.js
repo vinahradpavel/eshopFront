@@ -3,9 +3,9 @@ import styles from './style.module.css';
 
 export function ProductCard({ product }) {
     return (
-        <div>
-            <h3>{product.name}</h3>
-            <p>{product.price}</p>
+        <div className={styles.ProductCard}>
+            <h4>{product.name}</h4>
+            <p>{product.price} руб.</p>
         </div>
     )
 };
