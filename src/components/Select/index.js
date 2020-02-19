@@ -6,7 +6,7 @@ import styles from './style.module.css';
 export function Select({ limitItems = [], onChange }) {
     return (
         <div>
-            <p>Количество записей</p>
+            <p>Limit items</p>
             <select onChange={onChange} className={styles.Select}>
                 {limitItems.map(({ id, limit }) => (
                     <option key={id}>

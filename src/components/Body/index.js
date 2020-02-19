@@ -12,6 +12,8 @@ export function Body() {
     const [limit, setLimit] = useState(2);
 
     const onChangePage = useCallback(() => page === 1 ? null : setPage(page - 1), [page]);
+    const onChangeLimit = useCallback((e) => setLimit(e.target.value), [setLimit]);
+
     const isDisabled = page === 1;
 
     useEffect(() => {
@@ -33,7 +35,7 @@ export function Body() {
             <Button disabled={isDisabled} onClick={onChangePage}>Prev Page</Button>
             {products.map(prod => <ProductCard key={prod._id} product={prod} />)}
             <Button onClick={() => setPage(page + 1)}>Next Page</Button>
-            <Select limitItems={limitItems} onChange={(e) => setLimit(e.target.value)} />
+            <Select limitItems={limitItems} onChange={onChangeLimit} />
         </div>
 
     );
