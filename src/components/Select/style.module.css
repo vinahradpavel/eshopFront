@@ -1,0 +1,33 @@
+.Select {
+    position: relative;
+    display: flex;
+    width: 5em;
+    height: 3em;
+    line-height: 3;
+    background: #E5DADA;
+    overflow: hidden;
+    border-radius: .25em;
+}
+  /* Arrow */
+.Select::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #34495e;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+  /* Transition */
+.Select:hover::after {
+    color: #f39c12;
+}
+
+.Select p {
+
+    text-align: center;
+}
+
