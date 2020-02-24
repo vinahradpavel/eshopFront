@@ -38,7 +38,6 @@ export function Body() {
         }
     }, [page, limit, name]);
 
-
     if (!products) {
         return "loading...";
     }
