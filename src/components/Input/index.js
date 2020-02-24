@@ -3,13 +3,13 @@ import styles from './style.module.css';
 
 
 
-export function Input({ imputText = 'find:',
+export function Input({ imputText = 'search:',
     type = 'search',
     size = 15,
-    placeholder = 'find...',
+    placeholder = 'search...',
     onChange }) {
     return (
-        <div>
+        <div className={styles.Input}>
             <label>{imputText}</label>
             <input type={type} size={size} placeholder={placeholder} onChange={onChange} />
         </div>
