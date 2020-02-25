@@ -5,13 +5,13 @@ import { Container } from '../Container';
 import { Logo } from '../Logo';
 import { navItems } from '../../constants';
 
-const Header = () => (
-    <header className={styles.Header}>
-        <Container>
-            <Logo brandName="PashaShop" />
-            <Navigation navItems={navItems} />
-        </Container>
-    </header>
-)
-
-export default Header;
+export function Header() {
+    return (
+        <header className={styles.Header}>
+            <Container>
+                <Logo brandName="PashaShop" />
+                <Navigation navItems={navItems} />
+            </Container>
+        </header>
+    );
+};

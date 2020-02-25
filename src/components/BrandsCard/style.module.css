@@ -1,0 +1,10 @@
+.BrandsCard h4 {
+    width: initial;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.BrandsCard p {
+    font-style: italic;
+    text-align: center;
+}
