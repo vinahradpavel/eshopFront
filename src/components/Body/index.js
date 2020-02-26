@@ -4,17 +4,16 @@ import {
     Route,
 } from 'react-router-dom';
 import styles from './style.module.css';
+import { contactsList } from '../../constants';
 import { ProductsList } from '../ProductsList';
 import { BrandsList } from '../BrandsList';
+import { ContactsList } from '../ContactsList';
 
 
 export function Body({ children }) {
     return (
         <div className={styles.Body}>
             <Switch>
-                <Route exact path="/">
-                    <div> HELLO</div>
-                </Route>
                 <Route path="/products">
                     <ProductsList />
                 </Route>
@@ -22,7 +21,7 @@ export function Body({ children }) {
                     <BrandsList />
                 </Route>
                 <Route path="/contacts">
-                    <ProductsList />
+                    <ContactsList contactsList={contactsList} />
                 </Route>
             </Switch>
         </div>

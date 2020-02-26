@@ -30,3 +30,24 @@ export const limitItems = [
         limit: 10,
     },
 ];
+
+export const contactsList = [
+    {
+        id: 1,
+        name: 'Name1',
+        phoneNumber: '+375 (33) 111-11-11',
+        email: 'email1@email.com',
+    },
+    {
+        id: 2,
+        name: 'Name2',
+        phoneNumber: '+375 (33) 111-11-12',
+        email: 'email2@email.com',
+    },
+    {
+        id: 3,
+        name: 'Name3',
+        phoneNumber: '+375 (33) 111-11-13',
+        email: 'email3@email.com',
+    },
+];
