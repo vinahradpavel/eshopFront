@@ -10,6 +10,7 @@ import { BrandsList } from '../BrandsList';
 import { ContactsList } from '../ContactsList';
 
 export function Body() {
+
     return (
         <div className={styles.Body}>
             <Switch>
@@ -26,4 +27,3 @@ export function Body() {
         </div>
     );
 };
-

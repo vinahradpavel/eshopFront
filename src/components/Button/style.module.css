@@ -4,12 +4,23 @@
     color: white;
     padding: 15px 32px;
     text-align: center;
-   
     display: inline-block;
     font-size: 16px;
+    min-width: 100px;
+    cursor: pointer;
 }
 
 .Button:disabled {
     color: white;
+    cursor: not-allowed;
     background-color:  rgb(153, 153, 153);
+}
+
+.Button:hover {
+    background: rgb(153, 153, 153);
+}
+
+.Button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px #cbd6ee;
 }
