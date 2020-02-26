@@ -4,6 +4,7 @@ import styles from './style.module.css';
 
 export function Navigation({ navItems = [] }) {
     const history = useHistory();
+
     return (<div className={styles.Nav}>
         <ul>
             {navItems.map(({ id, title, url }) => (

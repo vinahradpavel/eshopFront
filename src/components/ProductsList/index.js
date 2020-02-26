@@ -50,6 +50,5 @@ export function ProductsList() {
             {products.map(product => <ProductCard key={product._id} product={product} />)}
             <Button onClick={() => setPage(page + 1)}>Next Page</Button>
         </div>
-
     );
 };

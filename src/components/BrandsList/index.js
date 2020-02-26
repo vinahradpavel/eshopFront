@@ -50,6 +50,5 @@ export function BrandsList() {
             {brands.map(brand => <BrandsCard key={brand._id} brand={brand} />)}
             <Button onClick={() => setPage(page + 1)}>Next Page</Button>
         </div>
-
     );
 };

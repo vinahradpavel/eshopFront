@@ -9,8 +9,7 @@ import { ProductsList } from '../ProductsList';
 import { BrandsList } from '../BrandsList';
 import { ContactsList } from '../ContactsList';
 
-
-export function Body({ children }) {
+export function Body() {
     return (
         <div className={styles.Body}>
             <Switch>

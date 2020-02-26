@@ -6,6 +6,7 @@ import { Logo } from '../Logo';
 import { navItems } from '../../constants';
 
 export function Header() {
+
     return (
         <header className={styles.Header}>
             <Container>

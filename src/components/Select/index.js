@@ -1,9 +1,8 @@
 import React from 'react';
 import styles from './style.module.css';
 
-
-
 export function Select({ limitItems = [], onChange }) {
+
     return (
         <div>
             <p>Limit items</p>
