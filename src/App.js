@@ -8,13 +8,13 @@ import {
 
 function App() {
   return (
-    <div className="App">
-      <Router>
+    <Router>
+      <div className="App">
         <Header />
         <Body />
         <Footer />
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 
