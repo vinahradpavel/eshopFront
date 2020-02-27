@@ -7,7 +7,6 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
-    "elint": "^1.11.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
@@ -21,7 +20,17 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": "eslint-config-airbnb",
+    "rules": {
+      "react/jsx-filename-extension": 0,
+      "react/prop-types": 0,
+      "no-undef": 0,
+      "no-console": 0,
+      "react/button-has-type": 0,
+      "no-underscore-dangle": 0,
+      "jsx-a11y/click-events-have-key-events": 0,
+      "jsx-a11y/no-noninteractive-element-interactions": 0
+    }
   },
   "browserslist": {
     "production": [
@@ -34,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^18.0.1"
   }
 }
